@@ -1,6 +1,3 @@
-
-
--- dummy inserts 4 per table
 -- patient
 insert into patient(patient_id, ssn, name, dob, address, city, state, zipcode)
 values ('123', '000-10-0000', 'Fett Boba', '1977-11-03', '1 FiresprayGunship', 'Santa Cruz', 'CA', 95076);
