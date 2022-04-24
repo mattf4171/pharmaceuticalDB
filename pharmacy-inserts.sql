@@ -332,18 +332,3 @@ insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
 values('zx10r6', 'Py Pharmacy', '2022-03-22', 'Phizer');
 insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
 values('zx12r7', 'Py Pharmacy', '2022-03-22', 'Phizer');
-
-
-select * from patient;
-select * from doctor;
-select * from Pharmaceutical;
-select * from pharmacy;
-select * from contract;
-select * from supervisor;
-select * from drug;
-select * from pharmacydrug;
-select * from prescription;
-
--- QUERIES
--- As a patient, I want to be able to see the prescription drugs that are ordered by price based on pharmacy pricings.
-select prescription.trade_name, price, prescription.rxid from pharmacydrug join pharmacy on pharmacydrug.pharmacy_name=pharmacy.pharmacy_name join fill on fill.pharmacy_name = pharmacy.pharmacy_name join prescription on prescription.rxid=fill.rxid where prescription.rxid = 'zx1r';
