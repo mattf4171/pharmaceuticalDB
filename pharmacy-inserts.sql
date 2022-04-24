@@ -311,23 +311,27 @@ values('zx10r', 'CVS Pharmacy', '2022-04-22', 'Johnson');
 insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
 values('zx3r', 'Medical Pavilion Pharmacy', '2022-04-04', 'CRSP');
 insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
-values('zx7r', 'CVS Pharmacy', '2022-04-27', 'Czar');
+values('zx7r', 'CVS Pharmacy', '2022-04-23', 'Czar');
 insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
-values('zx6r', 'Lucky Pharmacy', '2022-03-12', 'BNGO');
+values('zx6r', 'Lucky Pharmacy', '2022-03-16', 'BNGO');
 insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
 values('zx6r', 'Walgreens Pharmacy', '2022-04-18', 'BNGO');
 insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
-values('zx1r', 'Walgreens Pharmacy', '2022-03-22', 'CRSP');
+values('zx1r', 'Walgreens Pharmacy', '2022-03-06', 'CRSP');
 insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
-values('zx1r1', 'Handa Pharmacy', '2022-04-22', 'Roche');
+values('zx1r1', 'Handa Pharmacy', '2022-04-01', 'Roche');
 insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
-values('zx3r2', 'Py Pharmacy', '2022-04-04', 'Novartis');
+values('zx3r2', 'Py Pharmacy', '2022-04-07', 'Novartis');
 insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
-values('zx6r3', 'Icon Pharmacy', '2022-04-27', 'Merck');
+values('zx6r3', 'Icon Pharmacy', '2022-03-18', 'Merck');
+insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
+values('zx6r3', 'Icon Pharmacy', '2022-04-21', 'Merck');
+insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
+values('zx6r3', 'Icon Pharmacy', '2022-02-15', 'Merck');
 insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
 values('zx7r4', 'Cough Pharmacy', '2022-03-12', 'Merck');
 insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
-values('zx9r5', 'Handa Pharmacy', '2022-04-18', 'AbbVie');
+values('zx9r5', 'Handa Pharmacy', '2022-03-09', 'AbbVie');
 insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
 values('zx10r6', 'Py Pharmacy', '2022-03-22', 'Phizer');
 insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
