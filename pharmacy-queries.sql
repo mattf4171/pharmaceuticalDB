@@ -1,5 +1,5 @@
-runscript from '/Users/matthewfernandez/Desktop/CST363Database/DesignProject/pharmacy-ddl.sql';
-runscript from '/Users/matthewfernandez/Desktop/CST363Database/DesignProject/pharmacy-inserts.sql';
+runscript from 'pharmacy-ddl.sql';
+runscript from 'pharmacy-inserts.sql';
 
 -- QUERIES
 -- As a patient, I want to be able to see my prescription drug by trade name, price, quantity and pharmacy name ordered by pricings.
