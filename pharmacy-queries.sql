@@ -14,9 +14,5 @@ select c.contract_id, pharmacydrug.trade_name, s.supervisor_email, c.pharmacy_na
 --As a pharmacy, I want to see number of times that we have filled a prescription of value ‘zx6r3’
 select f.rxid, f.pharmacy_name, f.date_filled, per.refills_allowed from fill f join prescription per on f.rxid=per.rxid group by f.date_filled, per.rxid, f.pharmacy_name, per.refills_allowed having per.rxid = 'zx6r3' order by f.date_filled;
 
---Which doctors have been precribing the most drugs made by pharamacy company 'x'?
-select d.doctor_id, count(p.rxid) as prescriptions_made 
-from doctor d join prescription p on d.doctor_id=p.doctor_id 
-group by d.doctor_id 
-order by count(*) desc 
-limit 1;
+--Which doctors have been precribing the most drugs made by pharamacy company 'CVS Pharmacy'?
+select d.doctor_id, count(p.rxid) as prescriptions_made from doctor d join prescription p on d.doctor_id=p.doctor_id join fill f on p.rxid=f.rxid join pharmacy ph on ph.pharmacy_name=f.pharmacy_name group by d.doctor_id, ph.pharmacy_name having ph.pharmacy_name='CVS Pharmacy';
