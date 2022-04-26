@@ -303,7 +303,7 @@ insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_al
 values('zx10r6', '2022-03-19', 30, 'Omeprazole', 5, '153', 'ava11');
 insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_allowed, patient_id, doctor_id)
 values('zx12r7', '2022-04-11', 15, 'Omeprazole', 2, '157', 'ava11');
-
+ 
 
 --fill
 insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
