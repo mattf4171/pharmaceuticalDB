@@ -164,37 +164,6 @@ values
 
 --prescription
 insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_allowed, patient_id, doctor_id)
-<<<<<<< HEAD
-values('zx1r', '2022-03-13', 30, 'Vivelle', 0, '131', 'ava1');
-insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_allowed, patient_id, doctor_id)
-values('zx3r', '2022-04-22', 15, 'Vivelle', 2, '123', 'ava3');
-insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_allowed, patient_id, doctor_id)
-values('zx6r', '2022-02-02', 15, 'Sominex', 4, '127', 'ava7');
-insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_allowed, patient_id, doctor_id)
-values('zx7r', '2022-02-02', 20, 'Asprin', 1, '127', 'ava5');
-insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_allowed, patient_id, doctor_id)
-values('zx9r', '2022-03-13', 20, 'Trexan', 1, '129', 'ava7');
-insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_allowed, patient_id, doctor_id)
-values('zx10r', '2022-03-13', 40, 'Tylenol', 2, '125', 'ava5');
-insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_allowed, patient_id, doctor_id)
-values('zx12r', '2022-04-21', 20, 'FastTylenol', 1, '131', 'ava5');
--- 2.0
-insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_allowed, patient_id, doctor_id)
-values('zx1r1', '2022-01-30', 30, 'Entresto', 0, '151', 'ava19');
-insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_allowed, patient_id, doctor_id)
-values('zx3r2', '2022-04-12', 10, 'Xanax', 2, '153', 'ava17');
-insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_allowed, patient_id, doctor_id)
-values('zx6r3', '2022-02-22', 15, 'Viagra', 4, '157', 'ava15');
-insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_allowed, patient_id, doctor_id)
-values('zx7r4', '2022-02-17', 25, 'Viagra', 2, '151', 'ava15');
-insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_allowed, patient_id, doctor_id)
-values('zx9r5', '2022-03-23', 20, 'Bunavail', 4, '155', 'ava13');
-insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_allowed, patient_id, doctor_id)
-values('zx10r6', '2022-03-19', 30, 'Omeprazole', 5, '153', 'ava11');
-insert into prescription(rxid, date_prescribed, quantity, trade_name, refills_allowed, patient_id, doctor_id)
-values('zx12r7', '2022-04-11', 15, 'Omeprazole', 2, '157', 'ava11');
- 
-=======
 values
  ('zx1r', '2022-03-13', 30, 'Vivelle', 0, '131', 'ava1'),
  ('zx3r', '2022-04-22', 15, 'Vivelle', 2, '123', 'ava3'),
@@ -203,7 +172,6 @@ values
  ('zx9r', '2022-03-13', 20, 'Trexan', 1, '129', 'ava7'),
  ('zx10r', '2022-03-13', 40, 'Tylenol', 2, '125', 'ava5'),
  ('zx12r', '2022-04-21', 20, 'FastTylenol', 1, '131', 'ava5'),
--- 2.,
  ('zx1r1', '2022-01-30', 30, 'Entresto', 0, '151', 'ava19'),
  ('zx3r2', '2022-04-12', 10, 'Xanax', 2, '153', 'ava17'),
  ('zx6r3', '2022-02-22', 15, 'Viagra', 4, '157', 'ava15'),
@@ -212,7 +180,6 @@ values
  ('zx10r6', '2022-03-19', 30, 'Omeprazole', 5, '153', 'ava11'),
  ('zx12r7', '2022-04-11', 15, 'Omeprazole', 2, '157', 'ava11');
 
->>>>>>> 208827d924d0ec0045ea2981c5ec24d1294f3ddc
 
 --fill
 insert into fill(rxid, pharmacy_name, date_filled, pharmaceutical_name)
