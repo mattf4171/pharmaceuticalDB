@@ -16,3 +16,6 @@ select f.rxid, f.pharmacy_name, f.date_filled, per.refills_allowed from fill f j
 
 --Which doctors have been precribing the most drugs made by pharamacy company 'CVS Pharmacy'?
 select d.doctor_id, count(p.rxid) as prescriptions_made from doctor d join prescription p on d.doctor_id=p.doctor_id join fill f on p.rxid=f.rxid join pharmacy ph on ph.pharmacy_name=f.pharmacy_name group by d.doctor_id, ph.pharmacy_name having ph.pharmacy_name='CVS Pharmacy';
+
+-- Are there any patients who have been getting the same prescription from different doctors each month?
+select patient.name from patient join prescription on patient.patient_id=prescription.patient_id group by patient.name having count(patient.name)>1;
