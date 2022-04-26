@@ -9,9 +9,6 @@ select pharmacydrug.trade_name, price, pharmacydrug.quantity, pharmacy.pharmacy_
 select d.doctor_id, p.trade_name, f.date_filled, f.pharmacy_name from doctor d join prescription p on d.doctor_id=p.doctor_id join fill f on p.rxid=f.rxid order by f.date_filled;
 
 --As a pharmacy, I want to see the contract_id, pharmaceutical_name, supervisor_email, and trade_name of the drug that we supply for 'Walgreens Pharmacy'
-select c.contract_id, ph.pharmaceutical_name, s.supervisor_email, d.trade_name, pharm.pharmacy_name from pharmacy pharm join contract c on pharm.pharmacy_name=c.pharmacy_name
-join supervisor s on c.contract_id=s.contract_id join pharmaceutical ph on c.pharmaceutical_name=ph.pharmaceutical_name join drug d group by d.trade_name, c.contract_id having pharm.pharmacy_name = 'Walgreens Pharmacy';
---OR???
 select c.contract_id, pharmacydrug.trade_name, s.supervisor_email, c.pharmacy_name from supervisor s join contract c on s.contract_id=c.contract_id join pharmacydrug on c.pharmacy_name=pharmacydrug.pharmacy_name group by pharmacydrug.trade_name, s.supervisor_email having pharmacydrug.pharmacy_name='Walgreens Pharmacy';
 
 --As a pharmacy, I want to see number of times that we have filled a prescription of value ‘zx6r3’
